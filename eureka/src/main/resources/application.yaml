@@ -2,7 +2,7 @@ spring:
   application:
     name:EUREKA
   profiles:
-    active: "eureka2"
+    active: "eureka1"
 ---
 spring:
   profiles: eureka1
@@ -12,8 +12,8 @@ eureka:
   instance:
     hostname: localhost
   client:
-    registerWithEureka: true
-    fetchRegistry: true
+    registerWithEureka: false
+    fetchRegistry: false
     serviceUrl:
       defaultZone: http://localhost:8762/eureka/
       
